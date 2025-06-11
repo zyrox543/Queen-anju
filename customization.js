@@ -5,6 +5,8 @@ module.exports = {
   //====================menu=================================
   MENUMSG: function (pushname, runtime, config) {
     return `
+✘◍ ꜱᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴀᴅᴠᴇɴᴛᴜʀᴛ. 
+ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ʙᴏᴛ.
 
 ┏━━━━❮ 📆 ᴛᴏ ᴅᴀʏ 📆❯━━━━
 ┃
@@ -35,7 +37,7 @@ module.exports = {
   //======================download============================
   TIKTOK: function (title, author, q) {
     return `
-🎟️ *Ҩueen ʀᴜʜɪ ❦︎ TIKTOK DOWNLOADER* 🎟️
+🎟️ *QUEEN ANJU-MD TIKTOK DOWNLOADER* 🎟️
 
 🔢 *Please reply with the number you want to select:*
 
@@ -46,7 +48,7 @@ URL    * ${q}
   },
   FACEBOOK: function (title, q) {
     return `
-💢 Ҩueen ʀᴜʜɪ ❦︎ FB DOWNLOADER 💢
+💢 QUEEN ANJU-MD FB DOWNLOADER 💢
     
 🎞 TITLE 🎞 ${title}
 
@@ -55,7 +57,7 @@ Fb-Url: -=-${q}
   },
   TWITTER: function (desc, q) {
     return `
-💢 Ҩueen ʀᴜʜɪ ❦︎ TWITTER DOWNLOADER 💢
+💢 QUEEN ANJU-MD TWITTER DOWNLOADER 💢
 
 📝 Description: ${desc || "No description"}
 
@@ -63,11 +65,11 @@ Twitter URL: ${q}
         `.trim();
   },
   //=================main==================================
-  ALIVEIMG: "https://i.ibb.co/XxssQCfc/Rashmika-Ofc.jpg",
-  ALIVEVOICE: "./src/Auto_voice/alive.aac",
+  ALIVEIMG: "./src/media/LOGOS/alive.jpg",
+  ALIVEVOICE: "./src/media/Auto_voice/alive.aac",
   ALIVEMSG: function (hostname, config, pushname, runtime) {
     return `
-🧚‍♂️⃟🩵 Ҩueen ʀᴜʜɪ ❦︎ ᴀʟɪᴠᴇ sᴛᴇᴛᴜs 🧚‍♂️⃟🩵
+🧚‍♂️⃟🩵 𝐐𝐔𝐄𝐄𝐍 𝐀𝐍𝐉𝐔 𝐀𝐋𝐈𝐕𝐄 𝐒𝐓𝐀𝐓𝐔𝐒 🧚‍♂️⃟🩵
 
 ✘◍ 𝗜'𝗺 𝗔𝗹𝗶𝘃𝗲, 𝗧𝗵𝗮𝗻𝗸𝘀 𝗳𝗼𝗿 𝗔𝘀𝗸𝗶𝗻𝗴!
 
@@ -95,6 +97,7 @@ Twitter URL: ${q}
     )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB
 ┗━━━━━━━━━━━━━━━
 
+💬 ᴇɴᴏʏ ᴛʜᴇ 𝗯𝗼𝘁 ᴏ𝗳 𝚚𝚞𝚎𝚎𝚗 𝗮𝗻𝗷𝘂! ✨
         `.trim();
   },
   //====================movie======================================
@@ -106,9 +109,9 @@ Twitter URL: ${q}
   },
   SINHALASUB: function (movieData) {
     return `
-📽️ *[ Ҩueen ʀᴜʜɪ ❦︎ ] * 🔍
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿
 
-☘️ *𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎:* ${movieData.title}
+✨ *𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎:* ${movieData.title}
 ⭐ *𝙸𝙼𝙳𝙱 𝚁𝚊𝚝𝚒𝚗𝚐:* ${movieData.rating?.value || "𝙽/𝙰"} ★
 📆 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${movieData.metadata?.releaseDate || "𝙽/𝙰"}
 🌐 *𝙲𝚘𝚞𝚗𝚝𝚛𝚢:* ${movieData.metadata?.country || "𝙽/𝙰"}
@@ -117,9 +120,9 @@ Twitter URL: ${q}
   },
   CINESUBZ: function (title, metadata, rating) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿
 
-☘️ *𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎:* ${title}
+✨ *𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎:* 𝘾𝙝𝙚𝙘𝙠 𝙞𝙩 𝙤𝙪𝙩 → ${title}
        
 ⭐ *𝙸𝙼𝙳𝙱 𝚁𝚊𝚝𝚒𝚗𝚐:* ${rating?.value || "𝙽/𝙰"} ★
 📆 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${metadata?.releaseDate || "𝙽/𝙰"}
@@ -130,7 +133,7 @@ Twitter URL: ${q}
   },
   CINETVSHOW: function (movieResponse) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿
 
 📺 *𝚃𝚅 𝚂𝚑𝚘𝚠:* ${movieResponse.episodeInfo?.title || "𝙽/𝙰"}
 🎞️ *𝙴𝚙𝚒𝚜𝚘𝚍𝚎 𝚃𝚒𝚝𝚕𝚎:* ${movieResponse.episodeInfo?.episodeTitle || "𝙽/𝙰"}
@@ -139,23 +142,23 @@ Twitter URL: ${q}
   },
   CINETVSHOWALLDL: function (movieData) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿
 
-☘️ *𝙼𝚘𝚟𝚒𝚎 𝚃𝚒𝚝𝚕𝚎:* ${movieData.data.title}
+✨ *𝙼𝚘𝚟𝚒𝚎 𝚃𝚒𝚝𝚕𝚎:* ${movieData.data.title}
 📆 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${movieData.data.releaseDate}
 🌐 *𝙽𝚎𝚝𝚠𝚘𝚛𝚔:* ${movieData.data.network}
         `.trim();
   },
   SIMNHALAMOVIE: function (title) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿
 
 🎞️ *𝚃𝚒𝚝𝚕𝚎:* ${title}  
         `.trim();
   },
   AWAMOVIE: function (title, releaseDate, country) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿
 
 🎞️ *𝚃𝚒𝚝𝚕𝚎:* ${title}  
 📆 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${releaseDate}  
@@ -164,9 +167,9 @@ Twitter URL: ${q}
   },
   ANIMEMOVIE: function (title, releaseDate, country, duration) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿
 
-☘️ ${title} 
+✨ ${title} 
 📅 𝗥𝗲𝗹𝗲𝗮𝘀𝗲 𝗗𝗮𝘁𝗲:${releaseDate}  
 🌍 𝗖𝗼𝘂𝗻𝘁𝗿𝘆:${country}  
 ⏳ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:${duration}  
@@ -174,7 +177,7 @@ Twitter URL: ${q}
   },
   BAISCOMOVIE: function (title, year, rating, duration) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿
 
 🎞️ *𝚃𝚒𝚝𝚕𝚎:*  ${title} 
 📅 𝗥𝗲𝗹𝗲𝗮𝘀𝗲 𝗗𝗮𝘁𝗲:${year}  
@@ -184,9 +187,9 @@ Twitter URL: ${q}
   },
   ADULTMOVIE: function (title, rating, description) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿
 ──────────────────
-☘️ *Title:* ${title}
+✨ *Title:* ${title}
 ⭐ *Rating:* ${rating}
 
 🌍 *Description:*  
@@ -197,9 +200,9 @@ ${description}
   },
   ANIMOMOVIE: function (movieData) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍  
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿  
         
-☘️ ${movieData.title}  
+✨ ${movieData.title}  
 ⭐ Description:${movieData.description} 
     
 🌍  ${movieData.plot} 
@@ -207,9 +210,9 @@ ${description}
   },
   FILMPOMOVIE: function (title, rating, year, duration) {
     return `
-📽️ *『 Ҩueen ʀᴜʜɪ ❦︎ 』* 🔍  
+🎬 *『 𝑨𝑵𝑱𝑼 Xᴾᴿᴼ 𝑪𝑰𝑵𝑬𝑴𝑨 』* 🍿  
 
-☘️ *𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎:* ${title}
+✨ *𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎:* ${title}
 ⭐ *𝙸𝙼𝙳𝙱 𝚁𝚊𝚝𝚒𝚗𝚐:* ${rating}
 📅 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${year}
 ⏳ *𝙳𝚞𝚛𝚊𝚝𝚒𝚘𝚗:* ${duration}
@@ -257,7 +260,7 @@ ${description}
 • 📅 *Uploaded On:* ${data.ago}
 • 🔗 *Link:* ${data.url}
           
-🎧 Enjoy your music with Ҩueen ʀᴜʜɪ ❦︎ Bot  
+🎧 Enjoy your music with Queen Anju Bot  
 ❤️ Created by Janith Rashmika
         `.trim();
   },
@@ -271,7 +274,7 @@ ${description}
 ➥ *Uploaded On:* ${data.ago} 
 ➥ *Link:* ${data.url} 
 
-🎬 *Enjoy the video brought to you by Ҩueen ʀᴜʜɪ ❦︎ Bot!* 
+🎬 *Enjoy the video brought to you by Queen Anju Bot!* 
         `.trim();
   },
 };
